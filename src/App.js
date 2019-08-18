@@ -20,6 +20,7 @@ import unsaturatedFat from './images/unsaturatedFat.jpeg'
 import instructions from './images/Instructions.png'
 import information from './images/Information.png'
 import Food from './images/Food.png'
+import Footer from './components/Footer'
 /*
 import fruitsQuiz from './fruitsQuiz.js'
 import ve from './vegetablesQuiz.js'
@@ -369,6 +370,7 @@ class App extends Component {
                         </div>
 
                         <button onClick = {function lol(){document.location.reload(true)}}className = "Submit">Try Again</button>
+                        <Footer/>
                     </div>
 
               
@@ -435,7 +437,7 @@ class App extends Component {
                
                 </div>
                <p> <button className = "Submit" onClick={this.handleSubmit}>DONE</button> {invalid}</p>
-               
+               <Footer/>
                
                 </div>
            

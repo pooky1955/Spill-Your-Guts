@@ -7,6 +7,11 @@
  
 
 }
+footer {
+  margin-top : 2em;
+  margin-bottom : 2em;
+  color: rgb(46, 61, 45)
+}
 .Answer{
   font-family: Oranienbaum ;
   color : blue;

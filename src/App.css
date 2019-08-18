@@ -1,0 +1,153 @@
+
+
+ body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size : 20px;
+  text-align: center;
+ 
+
+}
+.Answer{
+  font-family: Oranienbaum ;
+  color : blue;
+}
+
+.Submit {
+  margin-top : 20px;
+  margin-bottom : 20px;
+  background : none;
+  border : 2px solid rgb(37, 41, 39);
+  border-radius : 20px;
+  padding : 12px 26px;
+  text-align: center;
+  font-size : 20px;
+  margin-right : 20px;
+  font-family : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Submit:hover{
+  background: #4CAF50;
+  transition-duration: 500ms;
+ 
+}
+button {
+  outline: none;
+  border : 2px solid black
+}
+.ChangeView {
+  background-color: rgb(124, 209, 126); /* Green */
+  border: none;
+  border-radius: 13px;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding : 5px 10px;
+
+  background: rgb(127, 219, 127);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border : 1px solid black;
+}
+.ChangeView:hover {
+  background: #4CAF50;
+  transition-duration: 500ms;
+}
+/* .ChangeView {
+   background : rgb(107, 197, 152);
+  border : 2px solid rgb(37, 41, 39);
+  border-radius : 30px;
+  text-align: center;
+  font-size : 20px;
+} */
+.Logo {
+  height : 50px;
+  vertical-align: middle;
+  margin-right : 15px;
+ 
+}
+.Title {
+  font-size : 100px;
+  color: rgb(58, 129, 60);
+  font-family: 'Bebas Neue';
+}
+.ResultImage {
+  width : 100%;
+}
+.Section {
+  margin-bottom : 50px;
+  border : 2px solid black;
+  background: rgb(168, 207, 129);
+  padding-top :20px ;
+  padding-bottom : 20px;
+  padding-left : 10px;
+  box-shadow : 5px 10px rgba(44, 44, 44, 0.781);
+}
+.Details {
+  border : 2px solid black;
+  padding : 10px;
+}
+.Label {
+  font-size : 40px;
+
+}
+
+.Quantity {
+  color : grey;
+  font-size : 20px;
+}
+.BacteriasPopUp{
+  /* background : rgb(106, 206, 108); */
+  margin-right : 10px;
+  border : 2px solid black;
+}
+.Quizs {
+  border : 1px solid rgb(38, 59, 49);
+  padding : 20px;
+  display: inline-block;
+}
+.App {
+ 
+  text-align: center;
+ 
+}
+
+#instructions {
+  font-size: 40px;
+}
+.title {
+  font-size: 45px;
+}
+.Intro {
+  text-align: center;
+ 
+
+}
+.InvalidSubmit {
+  color : red;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: bold;
+  font-size: 20px;
+ 
+
+}
+.Wrapper {
+  text-align: center;
+  width : 100%;
+}
+.PopUpImg {
+  position : fixed;
+
+}
+.links {
+  margin-left: 100px;
+  text-align: center; 
+  text-decoration: none;
+  
+  
+}
+.click {
+  border : 3px solid rgb(74, 206, 143);
+  background: rgb(74, 206, 143);
+  text-align: center;
+  padding: 30 px
+}

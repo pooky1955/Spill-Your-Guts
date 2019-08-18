@@ -1,0 +1,52 @@
+.imgStyle {
+   
+   
+    width :90%;
+    
+    opacity: 1;
+
+}
+
+.Opener {
+  
+    border : 0px solid black;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Calibri Light','Courier New', Courier, monospace;
+    color : rgb(14, 68, 17);
+    background : transparent;
+  }
+  .Opener:hover{
+    cursor : help;
+  }
+.modal {
+   text-align : center;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    bottom : 300px;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(255,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .close {
+    color: #aaaaaa;
+    float: right;
+
+    
+    
+    font-size: 60px;
+    font-weight: bold;
+    cursor : pointer;
+  }
+  .close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

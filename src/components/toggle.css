@@ -1,0 +1,25 @@
+.selected {
+    background:rgb(70, 201, 76);
+    font-size: 16px;
+    padding : 5px 15px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.normal {
+    font-size: 16px;
+    padding : 5px 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background : white;
+    text-decoration: none;
+
+}
+#yes {
+    margin-right : 10px;
+}
+button {
+    border-radius: 10px;
+}
+.normal:hover {
+    background : rgb(127, 221, 132);
+   transition-duration: 500ms;
+}

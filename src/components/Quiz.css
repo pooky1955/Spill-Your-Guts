@@ -1,0 +1,24 @@
+
+body {
+    display: inline-block;
+    padding-top : 40px;
+   
+    background: linear-gradient(rgb(179, 208, 126),rgb(55,191,149));
+}
+.FoodCategory {
+    font-size : 20px;
+    text-decoration: none;
+    padding-left: 50px;
+    
+}
+.SearchBar:hover, .SearchBar:focus {
+    border : 1px solid black;
+    box-shadow: 0px 0px 10px green;
+    transition-duration: 500ms;
+}
+
+.SearchBar {
+    border : 1px solid black;
+    font-size : 20px;
+    margin-bottom: 10px;
+}

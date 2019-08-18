@@ -1,7 +1,7 @@
 {
-  "main.css": "/Spill-Your-Guts/static/css/main.97622ff9.chunk.css",
-  "main.js": "/Spill-Your-Guts/static/js/main.f6fc03cf.chunk.js",
-  "main.js.map": "/Spill-Your-Guts/static/js/main.f6fc03cf.chunk.js.map",
+  "main.css": "/Spill-Your-Guts/static/css/main.cc570b69.chunk.css",
+  "main.js": "/Spill-Your-Guts/static/js/main.9e4b07d0.chunk.js",
+  "main.js.map": "/Spill-Your-Guts/static/js/main.9e4b07d0.chunk.js.map",
   "static/js/1.66625a53.chunk.js": "/Spill-Your-Guts/static/js/1.66625a53.chunk.js",
   "static/js/1.66625a53.chunk.js.map": "/Spill-Your-Guts/static/js/1.66625a53.chunk.js.map",
   "runtime~main.js": "/Spill-Your-Guts/static/js/runtime~main.ae46df34.js",
@@ -44,8 +44,8 @@
   "static/media/Instructions.png": "/Spill-Your-Guts/static/media/Instructions.dd8f0c35.png",
   "static/media/Information.png": "/Spill-Your-Guts/static/media/Information.452199c9.png",
   "static/media/Food.png": "/Spill-Your-Guts/static/media/Food.90168ec9.png",
-  "static/css/main.97622ff9.chunk.css.map": "/Spill-Your-Guts/static/css/main.97622ff9.chunk.css.map",
+  "static/css/main.cc570b69.chunk.css.map": "/Spill-Your-Guts/static/css/main.cc570b69.chunk.css.map",
   "index.html": "/Spill-Your-Guts/index.html",
-  "precache-manifest.9250bce049cb32fc7bee379f9a13aa80.js": "/Spill-Your-Guts/precache-manifest.9250bce049cb32fc7bee379f9a13aa80.js",
+  "precache-manifest.4f393ac000c4fbd9ba8d0da01df122e6.js": "/Spill-Your-Guts/precache-manifest.4f393ac000c4fbd9ba8d0da01df122e6.js",
   "service-worker.js": "/Spill-Your-Guts/service-worker.js"
 }

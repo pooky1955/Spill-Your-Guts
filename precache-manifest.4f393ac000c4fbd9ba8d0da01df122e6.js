@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/Spill-Your-Guts/static/media/highcarbs.b4b13fdc.JPG"
   },
   {
-    "revision": "f6fc03cf9b5f23484dfb",
-    "url": "/Spill-Your-Guts/static/css/main.97622ff9.chunk.css"
+    "revision": "9e4b07d0e6bd4c2121fe",
+    "url": "/Spill-Your-Guts/static/css/main.cc570b69.chunk.css"
   },
   {
     "revision": "66625a532d264bfb1dd3",
@@ -84,8 +84,8 @@ self.__precacheManifest = [
     "url": "/Spill-Your-Guts/static/media/Streptococcus.c42053cb.JPG"
   },
   {
-    "revision": "f6fc03cf9b5f23484dfb",
-    "url": "/Spill-Your-Guts/static/js/main.f6fc03cf.chunk.js"
+    "revision": "9e4b07d0e6bd4c2121fe",
+    "url": "/Spill-Your-Guts/static/js/main.9e4b07d0.chunk.js"
   },
   {
     "revision": "5453004f7a67f2384a069a672a32a5fb",
@@ -168,7 +168,7 @@ self.__precacheManifest = [
     "url": "/Spill-Your-Guts/static/media/Food.90168ec9.png"
   },
   {
-    "revision": "8a5306d39f307d4a74ccceec1370abfb",
+    "revision": "db584af36b72af2816a9717dd3255f45",
     "url": "/Spill-Your-Guts/index.html"
   }
 ];

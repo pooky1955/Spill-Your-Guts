@@ -2,7 +2,7 @@
   "name": "microbiomes-react",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://pooky1955.github.io/Spill-Your-Guts/",
+  "homepage" : "http://spill-your-guts.com/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.7.0",

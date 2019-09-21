@@ -8,7 +8,7 @@ import lowprotein from './images/lowprotein.JPG'
 import normalprotein from './images/normalprotein.JPG'
 import lowfiber from './images/lowfiber.JPG'
 
-const dictionnary = {
+export const nutrientsLevelBateriasDictionnary = {
     carbs : {
         high : {src : highcarbs, bacterias : ['Bifidobacteria', 'Clostridia', 'Lactobacilli','Bacteroides']},
         normal : 'normalcarbs',
@@ -27,9 +27,9 @@ const dictionnary = {
         low : {src : lowfiber,bacterias : [ ]}
     },
     protein : {
-        high : {src : highprotein,bacterias : ['Bifidobacteria','Lactobacilli','Prevotella'], bacteriasalt : ['Bacteroides','Alistipes','Bilophila','Clostridia','Bifidobacteria','Lactobacilli']},
+        high : {src : highprotein,plantBacterias : ['Bifidobacteria','Lactobacilli','Prevotella'], meatBacterias : ['Bacteroides','Alistipes','Bilophila','Clostridia','Bifidobacteria','Lactobacilli']},
         normal : {src : normalprotein,bacterias : []},
         low : {src : lowprotein,bacterias : []},
     }
 }
-export default dictionnary
+export default nutrientsLevelBateriasDictionnary

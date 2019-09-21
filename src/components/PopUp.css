@@ -1,10 +1,6 @@
 .imgStyle {
-   
-   
     width :90%;
-    
     opacity: 1;
-
 }
 
 .Opener {
@@ -37,15 +33,10 @@
   .close {
     color: #aaaaaa;
     float: right;
-
-    
-    
-    font-size: 60px;
     font-weight: bold;
     cursor : pointer;
   }
-  .close:hover,
-.close:focus {
+  .close:hover,.close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;

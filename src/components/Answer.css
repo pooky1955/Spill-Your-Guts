@@ -2,6 +2,8 @@
     height : 10px;
 }
 .Portion {
-    font-size: 12px;
-    
+    font-size: 1.5rem;
+}
+.FoodName {
+    font-size : 2rem;
 }

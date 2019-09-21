@@ -13,6 +13,12 @@
     text-decoration: none;
 
 }
+.toggle {
+    margin-bottom : 0.6rem;
+}
+.toggleLabel {
+    font-size : 1.4rem;
+}
 #yes {
     margin-right : 10px;
 }

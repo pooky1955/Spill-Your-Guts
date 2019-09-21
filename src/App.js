@@ -169,7 +169,7 @@ class App extends Component {
             details = details.map((trait) => {
 
                 return (
-                    <div className="BacteriasPopUp"> Learn more about {bacteriasForTraits[trait].map((el,idx) => { return <PopUp key = {idx} src={el} label={el} /> })}</div>
+                    <div className="BacteriasPopUp"> Learn more about {bacteriasForTraits[trait].map((el, idx) => { return <PopUp key={idx} src={el} label={el} /> })}</div>
                 )
             })
 
@@ -221,29 +221,30 @@ class App extends Component {
                 <div className="App">
                     <div>
 
-                        <img src={titleImage} width='90%' alt="title" /> <br></br>
+                        <img src={titleImage} width='90%' alt="title" />
                         <br></br>
                         <div className="Intro">
-                            <div id='instructions'>
+                            <div className='instructions'>
                                 <img src={instructionsLogo} alt="a logo" className='Logo' />INSTRUCTIONS
-                            </div><br /><br />
+                            </div>
                             Please input the foods that you eat in a typical day. Do you have the guts to do it? <br /><br />
                             < label htmlFor="weight">
-                                <div id='instructions'>
+                                <div className='instructions'>
                                     <img src={generalInformationLogo} alt='' className='Logo' />GENERAL INFORMATION
                                 </div>
-                                <br /><br />
                                 Your Weight :
                             </label> <br />
                             <input type='number' id='weight' min='0' style={myStyle} onChange={this.handleWeight}></input>
                             <label htmlFor="weight">kg</label>
                             <br /><br></br>
-                            <Toggle onYes={this.state.smoke} dataLabel="smoke" handleClick={this.handleToggle} label='Do you smoke?    ' /><br></br>
-                            <Toggle onYes={this.state.isMale} dataLabel="isMale" handleClick={this.handleToggle} label="Select your biological sex    " />
+
+                            <Toggle onYes={this.state.smoke} dataLabel="smoke" handleClick={this.handleToggle} label='Do you smoke?    ' />
+                            <Toggle onYes={this.state.isMale} yesLabel="Male" noLabel="Female" dataLabel="isMale" handleClick={this.handleToggle} label="Select your biological sex    " />
+
                         </div>
                     </div>
 
-                    <div id='instructions'> <img src={dailyDietLogo} className='Logo' alt=''></img>YOUR DAILY DIET</div> <br /><br />
+                    <div className='instructions'> <img src={dailyDietLogo} className='Logo' alt=''></img>YOUR DAILY DIET</div>
                     <div className="Wrapper">
                         <div className="Quizs">
                             {quizsComponents}
@@ -268,7 +269,7 @@ const InvalidComponent = (props) => {
     return (
         <div>
             {
-                errorMessages.map((errorMessage) => <React.Fragment><p className="InvalidSubmit">{errorMessage}</p></React.Fragment>)
+                errorMessages.map((errorMessage, idx) => <p key={idx} className="InvalidSubmit">{errorMessage}</p>)
             }
         </div>
     )

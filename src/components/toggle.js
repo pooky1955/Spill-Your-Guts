@@ -1,27 +1,30 @@
-import React from'react'
+import React from 'react'
 import './toggle.css'
 class Toggle extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props)
         this.props = props
     }
-    render(){
-        let yesClassName,noClassName
+    render() {
+        let yesClassName, noClassName
         let onYes = this.props.onYes
-        if (onYes){
+        if (onYes) {
             yesClassName = 'selected'
             noClassName = 'normal'
-        }else {
+        } else {
             noClassName = 'selected'
             yesClassName = 'normal'
         }
-        const {yesLabel,noLabel,dataLabel} = this.props
-        return (<div>
-            {this.props.label}
-            <button data-name = {dataLabel} className = {yesClassName} id= "yes" onClick = {this.props.handleClick}>{yesLabel || "Yes"}</button>
-            <button data-name = {dataLabel} className={noClassName} id = "no" onClick = {this.props.handleClick}>{noLabel || "No"} </button>
+        const { yesLabel, noLabel, dataLabel } = this.props
+        return (<div className = "toggle">
+
+            <span className="toggleLabel">
+                {this.props.label}
+            </span>
+            <button data-name={dataLabel} className={yesClassName} id="yes" onClick={this.props.handleClick}>{yesLabel || "Yes"}</button>
+            <button data-name={dataLabel} className={noClassName} id="no" onClick={this.props.handleClick}>{noLabel || "No"} </button>
         </div>
-            )
+        )
     }
 }
 export default Toggle

@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
  body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size : 20px;
+  font-size : 20;
+  padding-top : 40px;
+  background: linear-gradient(90deg,rgb(179, 208, 126),rgb(55,191,149));
   text-align: center;
 }
 footer {
@@ -104,8 +106,7 @@ button {
   border : 2px solid black;
 }
 .Quizs {
-  border : 1px solid rgb(38, 59, 49);
-  padding : 20px;
+  padding : 0.5rem;
   display: inline-block;
 }
 .App {
@@ -115,8 +116,8 @@ button {
   flex-direction: column;
 }
 
-#instructions {
-  font-size: 40px;
+.instructions {
+  font-size: 2.5rem;
 }
 .title {
   font-size: 45px;

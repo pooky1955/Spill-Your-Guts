@@ -1,12 +1,6 @@
 
-body {
-    display: inline-block;
-    padding-top : 40px;
-   
-    background: linear-gradient(rgb(179, 208, 126),rgb(55,191,149));
-}
 .FoodCategory {
-    font-size : 20px;
+    font-size : 1.7rem;
     text-decoration: none;
     padding-left: 50px;
     

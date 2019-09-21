@@ -15,8 +15,8 @@ export function generateSection(nutriment, quantity, level, label, additionalCom
     }
 
 
-    const bacteriasPopUp = bacteriaNames.map((bacteriaName) => {
-        return <PopUp src={bacteriaName} label={bacteriaName} />
+    const bacteriasPopUp = bacteriaNames.map((bacteriaName,idx) => {
+        return <PopUp src={bacteriaName} label={bacteriaName} key = {idx}/>
     })
     const nutrientImg = nutrientsLevelBateriasDictionnary[nutriment][level]['src']
     return (

@@ -40,7 +40,6 @@ class Quiz extends React.Component {
     render() {
         const { collapsed } = this.state
         let message = collapsed ? 'more' : 'less'
-        debugger
         const family = this.props.answers[0].family
         return (
             <div>

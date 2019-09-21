@@ -84,7 +84,7 @@ class App extends Component {
             errorMessages.push("Don't eat negative portions")
         }
         if (ingredients.length === 0) {
-            errorMessages.push("Make sure to check some food")
+            errorMessages.push(`Make sure to fill "Your daily diet"`)
         }
         if (!this.state.weight || this.state.weight <= 0) {
             errorMessages.push("Enter your weight correctly")
@@ -122,24 +122,30 @@ class App extends Component {
         newState.weight = Number(value)
         this.setState(newState)
     }
-    handleSex = (e) => {
+    // handleSex = (e) => {
 
-        let value = e.target.value
-        let newState = this.state
-        newState.isMale = value === 'man'
-        this.setState(newState)
+    //     let value = e.target.id ===
+    //     let newState = this.state
+    //     newState.isMale = value === 'man'
+    //     this.setState(newState)
 
-    }
-    handleSmokingClick = (e) => {
-        let isYes = e.target.id === 'yes' ? true : false
+    // }
+    handleToggle = (e) => {
+        let isYes = e.target.id === 'yes'
+        let toggleName = e.target.dataset.name
         let state = this.state
-        state.smoke = isYes
+        state[toggleName] = isYes
         this.setState(state)
     }
+    // handleSmokingClick = (e) => {
+    //     let isYes = e.target.id === 'yes' ? true : false
+    //     let state = this.state
+    //     state.smoke = isYes
+    //     this.setState(state)
+    // }
     render() {
         if (this.state.submitted) {
             window.scroll(0, 0)
-            debugger
             const sections = getAllSections(this.state.submittedIngredients, this.state.isMale, this.state.weight)
             const style = {
                 "textAlign": 'center'
@@ -163,7 +169,7 @@ class App extends Component {
             details = details.map((trait) => {
 
                 return (
-                    <div className="BacteriasPopUp"> Learn more about {bacteriasForTraits[trait].map((el) => { return <PopUp src={el} label={el} /> })}</div>
+                    <div className="BacteriasPopUp"> Learn more about {bacteriasForTraits[trait].map((el,idx) => { return <PopUp key = {idx} src={el} label={el} /> })}</div>
                 )
             })
 
@@ -200,55 +206,43 @@ class App extends Component {
             )
         } else {
             let quizsComponents = this.state.quizs.map((element, index) => {
-                if (element == undefined){
-                    debugger
-                }
+
                 return <Quiz
                     answers={element}
                     key={index}
                     handleClicks={this.handleClicks}
                     identifier={index} />
             })
-            debugger
-            console.log(this.state.quizs)
             const myStyle = {
                 "marginRight": 4
             }
 
             return (
                 <div className="App">
-
-
                     <div>
 
                         <img src={titleImage} width='90%' alt="title" /> <br></br>
-
-                        {/* <p></p> <div className="click"> <a href="" className= "links">The Gut Microbiome</a> <a href= "" className = "links" >Meet your Bacteria</a><a href=""className = "links" >Take the Quiz</a><a href=""className = "links" >About Us</a> <p></p></div><br></br> */}
-                        <br></br><div className="Intro">
-                            <div id='instructions'> <img src={instructionsLogo} alt="a logo" className='Logo'></img>INSTRUCTIONS</div><br /><br></br>
-
-
-                            Please input the foods that you eat in a typical day. Do you have the guts to do it? <br></br><br></br>< label htmlFor="weight">
-                                <div id='instructions'> <img src={generalInformationLogo} alt='' className='Logo'></img>GENERAL INFORMATION </div> <br></br>
-                                <br />Your Weight : </ label> <br></br>                         <input
-                                    type='number'
-                                    id='weight'
-                                    min='0'
-                                    style={myStyle}
-                                    onChange={this.handleWeight}></input>
+                        <br></br>
+                        <div className="Intro">
+                            <div id='instructions'>
+                                <img src={instructionsLogo} alt="a logo" className='Logo' />INSTRUCTIONS
+                            </div><br /><br />
+                            Please input the foods that you eat in a typical day. Do you have the guts to do it? <br /><br />
+                            < label htmlFor="weight">
+                                <div id='instructions'>
+                                    <img src={generalInformationLogo} alt='' className='Logo' />GENERAL INFORMATION
+                                </div>
+                                <br /><br />
+                                Your Weight :
+                            </label> <br />
+                            <input type='number' id='weight' min='0' style={myStyle} onChange={this.handleWeight}></input>
                             <label htmlFor="weight">kg</label>
                             <br /><br></br>
-                            <Toggle onYes={this.state.smoke} handleClick={this.handleSmokingClick} label='Do you smoke?    ' /><br></br>
-
-                            <span>Select your biological sex</span>
-                            <br />
-                            <select onChange={this.handleSex}>
-                                <option value="man"> Man</option>
-                                <option value="woman"> Woman</option>
-                            </select>
-
+                            <Toggle onYes={this.state.smoke} dataLabel="smoke" handleClick={this.handleToggle} label='Do you smoke?    ' /><br></br>
+                            <Toggle onYes={this.state.isMale} dataLabel="isMale" handleClick={this.handleToggle} label="Select your biological sex    " />
                         </div>
                     </div>
+
                     <div id='instructions'> <img src={dailyDietLogo} className='Logo' alt=''></img>YOUR DAILY DIET</div> <br /><br />
                     <div className="Wrapper">
                         <div className="Quizs">
@@ -257,7 +251,10 @@ class App extends Component {
                         </div>
 
                     </div>
-                    <p> <button className="Submit" onClick={this.handleSubmit}>DONE</button> {this.state.idiotUser && <InvalidComponent errorMessages={this.state.errorMessages} />}</p>
+                    <span>
+                        <button className="Submit" type="submit" onClick={this.handleSubmit}>DONE</button> {this.state.idiotUser && <InvalidComponent errorMessages={this.state.errorMessages} />}
+                    </span>
+
                     <Footer />
 
                 </div>

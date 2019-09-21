@@ -108,7 +108,6 @@ function getFatType(submittedIngredients) {
     let saturated = 0
     let monosaturated = 0
     for (const ingredient of submittedIngredients) {
-        debugger
         if (ingredient.nutrition.highSaturatedFat !== undefined) {
             saturated += ingredient.quantity
         }
@@ -166,13 +165,9 @@ function getProteinRelatedBacterias(nutrientsLevelBateriasDictionnary,proteinLev
     return nutrientsLevelBateriasDictionnary['protein'][proteinLevel][proteinType]
 }
 export function getAllSections(submittedIngredients, isMale, weight) {
-    debugger
     const nutrimentTotals = getAllNutrimentTotals(submittedIngredients)
     const nutrimentLevels = getAllLevels(nutrimentTotals, isMale, weight)
     const [fatImgSrc, fatType] = getFatType(submittedIngredients)
-    if (fatImgSrc === undefined && fatType === undefined){
-
-    }
     const fatBacterias = getFatRelatedBacterias(nutrientsLevelBateriasDictionnary,fatType,nutrimentLevels.fat)
     const fatImg = fatType !== "none" ? <img alt = "Fat type" src={fatImgSrc} className="ResultImage" /> : undefined
     const fatSection = generateSection('fat', nutrimentTotals.fat, nutrimentLevels.fat, 'FAT', fatImg, fatBacterias)

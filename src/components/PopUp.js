@@ -37,7 +37,7 @@ const Opener = (props) => {
 const Modal = (props) => {
     const { handleClicks, src } = props
     return (
-        <div className="modal"> <span onClick={handleClicks} class="close">&times; </span><img alt=' bacteria' className="imgStyle" src={imgSrcs[src]} /></div>
+        <div className="modal"> <div style = {{width: "90%"}}><span onClick={handleClicks} className="close">&times; </span><img alt=' bacteria' className="imgStyle" src={imgSrcs[src]} /></div></div>
     )
 }
 class PopUp extends React.Component {

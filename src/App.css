@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap');
  body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size : 20;
@@ -105,6 +105,9 @@ button {
   margin-right : 10px;
   border : 2px solid black;
 }
+img {
+  pointer-events : none;
+}
 .Quizs {
   padding : 0.5rem;
   display: inline-block;
@@ -131,10 +134,11 @@ button {
   color : red;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: bold;
-  font-size: 20px;
+  font-size: 1rem;
  
 
 }
+
 .Wrapper {
   text-align: center;
   width : 100%;

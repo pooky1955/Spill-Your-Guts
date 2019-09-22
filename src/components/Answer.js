@@ -40,12 +40,12 @@ class Answer extends React.Component {
 
                 <div style={myStyle} className={this.props.identifier}>
                     <input className={this.props.identifier} checked={this.props.checked} onChange={this.props.onChange} type='checkbox' id={id} />
-                    <span style={inputStyle} className="InputNumber">
-                        <input onChange={this.handleNumberChange} value={this.state.quantity} type='number' id={id + 1} min='0' style={inputStyle} maxLength='2' />
-                    </span>
 
                     <label htmlFor={id}><span className = "FoodName">{nameFruit}</span> <span className="Portion">for {this.props.portion} </span>   </label>
 
+                    <span style={inputStyle} className="InputNumber">
+                        <input className = "NumberField" onChange={this.handleNumberChange} value={this.state.quantity} type='number' id={id + 1} min='0' style={inputStyle} maxLength='2' />
+                    </span>
 
                 </div>
             )

@@ -168,7 +168,7 @@ self.__precacheManifest = [
     "url": "/static/media/smoker.dc096067.jpeg"
   },
   {
-    "revision": "a07e94678985832774b9fb23e616df90",
+    "revision": "c98d4f216a76bdf59808c688492a3a3c",
     "url": "/index.html"
   }
 ];
